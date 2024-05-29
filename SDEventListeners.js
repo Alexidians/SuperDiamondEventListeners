@@ -46,7 +46,7 @@ function InitalizeSDEventListeners(obj) {
  obj.SuperDiamondEventListenersObjectData = {}
  obj.SuperDiamondEventListenersObjectData.events = {}
  obj.SuperDiamondEventListenersObjectData.InitalizedNormalEvents = []
- obj.SuperDiamondEventListenersObjectData.SNormalEventHandler = SuperDiamondEventListenersGlobalData.functions.NormalEventHandler.bind(obj)
+ obj.SuperDiamondEventListenersObjectData.NormalEventHandler = SuperDiamondEventListenersGlobalData.functions.NormalEventHandler.bind(obj)
  return obj
 }
 
