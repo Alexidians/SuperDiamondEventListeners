@@ -26,7 +26,7 @@ var SuperDiamondEventListenersGlobalData = {
         }
       }
     },
-    SDNormalEventHandler: function(event) {
+    NormalEventHandler: function(event) {
       for (let key in this.SuperDiamondEventListenersObjectData.events) {
         if (this.SuperDiamondEventListenersObjectData.events.hasOwnProperty(key)) {
           let eventObject = this.SuperDiamondEventListenersObjectData.events[key];
@@ -46,7 +46,7 @@ function InitalizeSDEventListeners(obj) {
  obj.SuperDiamondEventListenersObjectData = {}
  obj.SuperDiamondEventListenersObjectData.events = {}
  obj.SuperDiamondEventListenersObjectData.InitalizedNormalEvents = []
- obj.SuperDiamondEventListenersObjectData.SDNormalEventHandler = SuperDiamondEventListenersGlobalData.functions.SDNormalEventHandler.bind(obj)
+ obj.SuperDiamondEventListenersObjectData.SNormalEventHandler = SuperDiamondEventListenersGlobalData.functions.NormalEventHandler.bind(obj)
  return obj
 }
 
@@ -57,5 +57,5 @@ function ThisInitalizeSDEventListeners(obj) {
  this.SuperDiamondEventListenersObjectData = {}
  this.SuperDiamondEventListenersObjectData.events = {}
  this.SuperDiamondEventListenersObjectData.InitalizedNormalEvents = []
- this.SuperDiamondEventListenersObjectData.SDNormalEventHandler = SuperDiamondEventListenersGlobalData.functions.SDNormalEventHandler.bind(this)
+ this.SuperDiamondEventListenersObjectData.NormalEventHandler = SuperDiamondEventListenersGlobalData.functions.NormalEventHandler.bind(this)
 }
