@@ -43,6 +43,7 @@ function InitalizeSDEventListeners(obj) {
  obj.SDCallEvent = SuperDiamondEventListenersGlobalData.functions.SDCallEvent.bind(obj)
  obj.SDRemoveEventListener = SuperDiamondEventListenersGlobalData.functions.SDRemoveEventListener.bind(obj)
  obj.SDAddEventListener = SuperDiamondEventListenersGlobalData.functions.SDAddEventListener.bind(obj)
+ obj.SuperDiamondEventListenersObjectData = {}
  obj.SuperDiamondEventListenersObjectData.events = {}
  obj.SuperDiamondEventListenersObjectData.InitalizedNormalEvents = []
  obj.SuperDiamondEventListenersObjectData.SDNormalEventHandler = SuperDiamondEventListenersGlobalData.functions.SDNormalEventHandler.bind(obj)
@@ -53,6 +54,7 @@ function ThisInitalizeSDEventListeners(obj) {
  this.SDCallEvent = SuperDiamondEventListenersGlobalData.functions.SDCallEvent.bind(this)
  this.SDRemoveEventListener = SuperDiamondEventListenersGlobalData.functions.SDRemoveEventListener.bind(this)
  this.SDAddEventListener = SuperDiamondEventListenersGlobalData.functions.SDAddEventListener.bind(this)
+ this.SuperDiamondEventListenersObjectData = {}
  this.SuperDiamondEventListenersObjectData.events = {}
  this.SuperDiamondEventListenersObjectData.InitalizedNormalEvents = []
  this.SuperDiamondEventListenersObjectData.SDNormalEventHandler = SuperDiamondEventListenersGlobalData.functions.SDNormalEventHandler.bind(this)
